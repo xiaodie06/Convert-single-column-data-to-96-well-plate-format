@@ -1,6 +1,7 @@
 install.packages(readxl)
 library(readxl)
 library(tidyverse)
+library (openxlsx)
 
 # Read the data from Excel
 data <- read_excel("C:\\Users\\ywang\\Desktop\\11152023  internalization-1.xls")
@@ -21,6 +22,6 @@ new_data <- data %>%
   select(-1) %>% 
   pivot_wider(names_from = number, values_from = AF647)
  
-write.xlsx(new_data, "11162023.xlsx")
+write.xlsx(new_data, "ols.xlsx")
 
 
