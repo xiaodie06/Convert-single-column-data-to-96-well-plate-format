@@ -1,4 +1,6 @@
-install.packages(readxl)
+install.packages("readxl")
+install.packages("tidyverse")
+install.packages("openxlsx")
 library(readxl)
 library(tidyverse)
 library (openxlsx)
